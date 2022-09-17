@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-[#E7ECEE] !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-amber-500;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+@layer components {
+    .headerLink {
+        @apply flex gap-1 items-center space-x-2 cursor-pointer;
+    }
+  
+    .span {
+        @apply relative uppercase text-sm font-medium before:bg-amber-500 before:rounded-bl before:-bottom-1.5 before:h-0.5 before:inset-x-0 before:absolute before:transform before:origin-left before:scale-x-0 before:transition-all before:duration-200 group-hover:before:scale-x-100;
+    }
+
+    .link {
+        @apply relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100;
+    }
+  }
