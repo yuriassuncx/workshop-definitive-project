@@ -29,7 +29,7 @@ export function AnimalPage() {
         setTimeout(() => {
             axios("http://zoo-animal-api.herokuapp.com/animals/rand/1", {
                 headers: {
-                    Accept: "application/json",
+                    Accept: "XMLHttpRequest",
                 },
             }).then(response => {
                 setGetAnimalsData(response.data);

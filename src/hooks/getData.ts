@@ -13,14 +13,15 @@ export interface AnimalProps {
 
 export function getData() {
     const [getAnimalsData, setGetAnimalsData] = useState<AnimalProps[]>([]);
+    const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        axios("http://zoo-animal-api.herokuapp.com/animals/rand/10", {
-            headers: {
-                Accept: "application/json"
-            }
-        }).then(response => setGetAnimalsData(response.data))
-    }, [])
+        useEffect(() => {
+            axios("http://zoo-animal-api.herokuapp.com/animals/rand/10", {
+                headers: {
+                    Accept: "XMLHttpRequest"
+                }
+            }).then(response => setGetAnimalsData(response.data))
+        }, [])
 
     return { getAnimalsData }
 
