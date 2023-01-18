@@ -7,7 +7,7 @@ Projeto desenvolvido de acordo com o Workshop - Unipê - com o intuito de criar 
 <p align="center">Projeto desenvolvido por Yuri Assunção.</p>
 <p align="center">https://workshop-definitive-project.vercel.app/</p>
 
-# 💻 Diferencias no projeto
+# 💻 Diferenciais no projeto
 
 - [x] Construído com TailwindCSS
 - [x] Projeto Altamente Responsivo
